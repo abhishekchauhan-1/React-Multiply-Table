@@ -1,0 +1,169 @@
+/* Base styles for all screen sizes */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Quicksand','sans-serif';
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+.image-class {
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.table-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Quicksand','sans-serif';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Quicksand';
+}
+
+input:focus {
+  border: 1.5px solid black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-family: 'Quicksand';
+  font-size: 12px;
+  margin-top: 12px;
+  height: 28px;
+  width: 40%;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  background-color: grey;
+  border: 1px;
+}
+
+td, tr {
+  padding: 8px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.icon {
+  color: red;
+}
+
+p {
+  font-weight: bold;
+}
+
+/* Media query for screens up to 600px (Mobile) */
+@media screen and (max-width: 600px) {
+  .main-container {
+    margin-top: 50px;
+  }
+
+  .image-class {
+    height: 80px;
+    width: 80px;
+  }
+
+  .table-input {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input {
+    height: 20px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+
+  th {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  td, tr {
+    padding: 6px;
+    font-size: 10px;
+  }
+}
+
+/* Media query for screens from 601px to 1024px (Tablet) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    margin-top: 100px;
+  }
+
+  .image-class {
+    height: 120px;
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  th {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  td, tr {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

@@ -132,7 +132,7 @@ p {
     font-size: 10px;
     padding: 8px;
     height: auto;
-    width: 30%;
+    width: auto;
   }
 
   th {
@@ -142,7 +142,7 @@ p {
 
   td, tr {
     padding: 6px;
-    font-size: 10px;
+    font-size: 15px;
   }
   table{
     width: 250px;

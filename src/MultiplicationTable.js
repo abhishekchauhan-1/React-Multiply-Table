@@ -8,21 +8,22 @@ class MultiplicationTable extends Component {
     this.inputRef = createRef();
     this.state = {
       inputValue: "",
+      temporaryInputValue:"",
       showTable: false,
     };
   }
 
   handleInputChange = (event) => {
-    const inputValue = event.target.value;
-    this.setState({ inputValue });
+    const temporaryInputValue = event.target.value;
+    this.setState({ temporaryInputValue });
   };
 
   handleSubmitClick = () => {
-    const inputValue = parseInt(this.state.inputValue);
+    const inputValue = parseInt(this.state.temporaryInputValue);
     if (!isNaN(inputValue) && inputValue > 0) {
-      this.setState({ showTable: true });
+      this.setState({ inputValue,showTable: true });
     } else {
-      this.setState({ showTable: false });
+      this.setState({ inputValue:"",showTable: false });
     }
   };
 
@@ -57,7 +58,7 @@ class MultiplicationTable extends Component {
   }
 
   render() {
-    const { showTable } = this.state;
+    const { showTable,temporaryInputValue } = this.state;
 
     return (
       <div className="main-container">
@@ -68,9 +69,10 @@ class MultiplicationTable extends Component {
           <input
             type="number"
             ref={this.inputRef}
+            value={temporaryInputValue}
             onChange={this.handleInputChange}
           />
-          <button type="button" onClick={this.handleSubmitClick}>
+          <button className="button" type="button" onClick={this.handleSubmitClick}>
             Generate Table
           </button>
           {showTable ? this.renderTable() : null}
@@ -80,7 +82,7 @@ class MultiplicationTable extends Component {
           Abhishek Singh Chauhan
         </p>
       </div>
-    );
+     );
   }
 }
 

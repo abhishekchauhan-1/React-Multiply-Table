@@ -47,8 +47,8 @@ class MultiplicationTable extends Component {
       <table border="1px">
         <thead>
           <tr>
-            <th>Multiplier</th>
-            <th>Multiplicand</th>
+           <th>Multiplicand</th>
+            <th>Multiplier</th> 
             <th>Result</th>
           </tr>
         </thead>

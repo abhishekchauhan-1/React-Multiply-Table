@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-Multiply-Table/static/css/main.5454f55a.css",
+    "main.js": "/React-Multiply-Table/static/js/main.8d7ea6dd.js",
+    "static/media/favicon.png": "/React-Multiply-Table/static/media/favicon.7a3d3c836ad7ad5bdb41.png",
+    "index.html": "/React-Multiply-Table/index.html",
+    "main.5454f55a.css.map": "/React-Multiply-Table/static/css/main.5454f55a.css.map",
+    "main.8d7ea6dd.js.map": "/React-Multiply-Table/static/js/main.8d7ea6dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5454f55a.css",
+    "static/js/main.8d7ea6dd.js"
+  ]
+}
